@@ -1,29 +1,32 @@
-# Basic e-commerce cart application built with React & Redux
+# Exemplo do meu código utilizando REACT && REDUX && JSON SERVER
 
-This simple application prototype shows how we can use React and Redux to build a friendly user experience with instant visual updates.
+Uma aplicação simples de Carrinho para ecommerce, contendo página de lista de produto, produto individual e pré-checkout utilizando React and Redux para um UX adequado e atualizações visuais instantâneas.
 
-## Demo
-[Here](https://my-shopping-cart-leawwzhsmf.now.sh/)
 
 ## Features
-* Add and remove items 
-* Remove items
-* Edit the quantity of the items in real time
-* Calculate automatically the total including the shipping (if chosen)
+* Adiciona e subtrai itens no carrinho
+* Remove os itens
+* Edição em tempo real
+* Calcula o total dos preços dos itens no carrinho
 
-# Getting started
-### Requirements
+# Iniciando
+### Requerimentos
 
 * Node.js
 * NPM
 
-### Package installation
+### Instalar a aplicação
 ```bash
 npm install
 ```
- ### Start the React App
- Excute the following command: 
+### Iniciar a aplicação
+Pra executar, primeiro precisamos rodar o JSON SERVER
+json-server --watch rest-api/products.json
+
+Ele ocupara a porta 3000 o que fará nosso carrinho rodar na primeira porta disponível acima desta
+
 ```bash
 npm start
 ```
-The application will start automatically in your browser on http://localhost:3000
+VocÊ será alertado de que a porta 3000 já esta ocupada. Responda que sim para executar o carrinho em outra porta.
+O carrinho será aberto automaticamento no seu browser em http://localhost:3001 ou na primeira porta disponível acima desta
